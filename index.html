@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="styles.css" media="screen" />
+  </head>
+
+  <body>
+    <header class="newheader">
+      <div>
+        <ul class="nav">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">Featured</a></li>
+          <li><a href="#info">Blog</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </header>
+
+   <!-- The video -->
+<video autoplay muted loop id="myVideo">
+    <source src="video (1).mp4" type="video/mp4">
+  </video>
+  
+  <!-- Optional: some overlay text to describe the video -->
+  <div class="content">
+    <h1>Dream Escapes</h1>
+  </div>
+
+     <h2 id="mainsub">Dream Escapes is an exclusive travel club offering our members great deals on extraordinary, hand-picked luxury hotels and holidays.</h2>
+
+    <div class="section">
+      <h2>THIS MONTH'S FEATURED DESTINATIONS</h2>
+    </div>
+
+    <div class="overview">
+
+      <div id="one">
+        <div class="overlay" id="feat1" onclick="displaycontent()">
+          <h2>Four Seasons Bora Bora</h2>
+        </div>
+      </div>
+
+      <div id="two">
+        <div class="overlay" id="feat2" onclick="showcontent()">
+          <h2>Lokha Ubud Resort</h2>
+        </div>
+      </div>
+
+      <div id="three">
+        <div class="overlay" id="feat3" onclick="showcontentthree()">
+          <h2>Casa Palopo Guatemala</h2>
+        </div>
+      </div>
+
+    </div>
+
+    
+<div class="main">
+    <div id="left">
+        <h2 id="name">FOUR SEASONS RESORT </br> <span>Bora Bora</span></h2>
+        <img class="thumb" id="preview"
+            src="https://assets.hotelplan.com/content/TH/00/128/526/hotel/de/leadimage/547000.jpg" />
+        <div class="video dnone">
+            <iframe width="500" height="315" src="https://www.youtube.com/embed/tGzr4iQBuuY?" frameborder="0"
+                allow="accelerometer; autoplay=1; controls=0; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <div id="right">
+        <h3 id="subhead">LIFE IS BETTER OVER WATER</h3>
+        <p id="desc">Imagine sinking your toes into white-sand beaches, stopping for a dip in a crystal-clear lagoon,
+            and sipping
+            Champagne while gazing at an expanse of shimmering stars. The newly enhanced Four Seasons Resort Bora Bora
+            invites you to stop imagining and let us make your holiday dreams come true.<br><br>
+            Those lucky enough to have travelled to Bora Bora aren’t likely to forget the magic of staying over the
+            water. From the lapping of turquoise water below to the pink glow of the island sunset, life over water is
+            an experience not easily forgotten. The Resort's newly refreshed overwater bungalow suites offer a modern
+            Polynesian blend of luxury, comfort and design.
+        </p>
+        <div class="btngroup">
+            <button><a id="avail"
+                    href="https://www.fourseasons.com/borabora/offers/stay_longer_fourth_night_free_with_breakfast/">Check
+                    Availability</a></button>
+            <button><a id="more" href="https://www.fourseasons.com/borabora/">Discover More</a></button>
+            <button id="vidbtn" onclick="showvid()"></button>
+        </div>
+    </div>
+
+</div>
+
+<div class="cta">
+    <div id="call">
+        <h2>Get your weekly dream escapes now! Register for our escapes newsletter and let your dream destination find you!</h2>
+        <form>
+            <input type="text" placeholder="Name"/>
+            <input type="email" placeholder="Email"/>
+            <button type="submit">REGISTER</button>
+        </form>
+    </div>
+</div>
+
+<div class="shuffle">
+
+    <div id="game">  
+    <h3 id="gamecta">Not what your are looking for?<br><br>Let us suggest you another random dream escapes property! </h3> 
+    <button id="shuffle">SHOW ME!</button>   
+    <a  id="shufflelink" href=""></a>
+    </div>  
+
+    <div id="results">
+        <h5></h5>
+        <img id="shuffleimg" src="https://images.photowall.com/products/54297/gold-world-map-with-black-background.jpg?h=699&q=85"/>
+    </div>  
+
+</div>
+
+<div style="text-align:center; margin-top:0px;">
+    <h2>TRAVEL BLOG</h2>
+</div>
+
+<div class="blog">
+
+    <div class="card">
+        <img width="350" height="200" src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F28%2F2020%2F09%2F28%2Fcape-town-south-africa-aerial-NAMECOMP0920.jpg"/>
+        <h2>Win a Year of Free Flights</h2>
+        <p>In a time when many travel companies struggle to stay afloat, South Africa is set to debut a new airline that will offer domestic flights starting this winter. There’s only one thing missing for the big launch: a name for the new carrier. Instead of seeking the advice of business professionals, the airline has turned to the public, launching a competition to find the best name. The grand prize winner will be awarded the highly appropriate (and valuable) prize of one year of free travel. More...
+
+        </p>
+        
+    </div>
+    <div class="card">
+        <img width="350" height="200" src="https://blog.headout.com/wp-content/uploads/2020/08/jean-estrella-_XOpGfUkjhs-unsplash-scaled-e1597422159761.jpg"/>
+        <h2>Top 20 COVID free destinations</h2>
+        <p>The pandemic did manage to spare a few countries around the world, and though most of them are countries you've probably never heard of in the far Oceania and Pacific Islands, now is a good to time to know/visit them! Some of the countries in this list closed borders at the right time and took the necessary precautions to flatten the curve, hence giving them the COVID free status as of today. If you're planning your next vacation, here are some countries you should consider. More...</p>
+    </div>
+    <div class="card">
+        <img width="350" height="200" src="https://media.cntraveler.com/photos/5f3ea93fccf45d10e984e80c/16:9/w_2560%2Cc_limit/TR1020_WOM_Opener01.png"/>
+        <h2>Plan a stress free trip</h2>
+        <p>In this new world, where a border can close just as suddenly as it was reopened, a travel fixer's nimble skill set is especially essential. In the early months of the pandemic, Alice Daunt of Daunt Travel leveraged a longstanding relationship with an Indian Ocean resort to hold—not book—rooms for clients of hers, a family that was wary of putting money down too far in advance of their Christmas vacation; now they can reassess in October. More...</p>
+    </div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="scripts.js"></script>
+  </body>
+</html>
+
